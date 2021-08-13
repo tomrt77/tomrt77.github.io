@@ -1,146 +1,96 @@
-.body-page {
-  margin-top: 130px;
-}
-#navbar{
-  background: blue;
-  width: 100%;
-  height: 130px;
-  padding-left: 0px;
-  margin: 0px;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-#navbar ul{
-  list-style: none;
-  text-align: center;
-  width: 100%;
-  padding: 30px 0px 0px 0px;
-  margin: 0px;
-}
-#navbar li{
-  display: inline;
-}
-#navbar a{
-  font-size: 40px;
-  color: white;
-  padding-right: 70px;
-  text-decoration: none;
+body{
+    background-color: #d7d7d7;
 }
 
-.container {
-  display: flex;
-  margin: 0px;
-  padding: 0px;
+#main-picture{
+    display: flex;
+/*    justify-content: center; */
+    width: 50%;
+    position: relative;
+    height: 400px;
+    margin: 50px auto;
 }
 
-.flex-item {
-  width: 600px;
+#photo{
+    height: 400px;
 }
 
-#header {
-  height: 430;
-  width: auto;
-  background-image: url(https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png);
-  background-size:  auto 100%;
-  background-repeat: no-repeat;
-  background-positon: center;
-  font-family: Abril Fatface;
+.arrow-container{
+    background-color: #ececec;
+    padding: 0px 10px;
 }
 
-#header h1{
-  font-size: 34px;
-  margin-left: 330px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding-top: 260px;
-  padding-bottom: 0px;
-}
-#header h2{
-  font-size: 67px;
-  margin: 0px 0px 0px 330px;
-  padding-top: 0px;
-  line-height: 0.8;
+.left-arrow{
+    transform: rotate(0.5turn);
+    height: 30px;
+    margin: 180px 0px;
+    background-color: #ececec;
 }
 
-.first-paragraph{
-  width: auto;
-  margin: 40px 20px 0px 20px;
-  padding-top: 0px;
-  font-family: Josefin Sans;
-  font-size: 30px;
-  color: #222;
-  line-height: 1.5;
+.right-arrow{
+    height: 30px;
+    margin: 180px 0px;
+    background-color: #ececec;
 }
 
-ul{
-  width: 600px;
-  margin: 20px 0px 20px 60px;
-  margin-top: 0px;
-  padding: 10px 30px;
-  font-family: Josefin Sans;
-  font-size: 30px;
-  color: #222;
-  line-height: 1.5;
-  list-style: square;
+.gray-container{
+    height: 100px;
+    width: 600px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    margin: 0px 28px 0px 36px;
+    padding: 0px 20px;
+    color: white;
+    opacity: 0.7;
 }
 
-.body-li{
-  font-size: 20px;
-}
-.grey-box {
-  position: relative;
-  width: 600px;
-  margin: 0px 0px 40px 0px;
-  font-family: Abril Fatface;
-  background: rgb(69,69,68);
-  color: white;
-  font-size: 70px;
-  padding: 5px 0px;
-}
-blockquote::before {
-  content: '”';
-  position: absolute;
-  font-size: 150px;
-  top: 0px;
-  left: 5px;  
-}
 
-h3 {
-  font-family: Josefin Sans;
-  text-transform: uppercase;
-  font-size: 36px;
-  font-weight: bold;
-  width: 680px;
-  margin: 40px 20px ;
-}
+h1{
+     font-size: 22px;
+     margin: 10px 0px;
+ }
 
-h4{
-  font-family: Josefin Sans;
-  font-size: 30px;
-  font-weight: bold;
-  width: 680px;
-  margin: 20px 0px 0px 20px;
-}
+ p{
+    margin: 10px 0px;
+ }
 
-.regural{
-  width: 680px;
-  margin: 40px 20px;
-  font-family: Josefin Sans;
-  font-size: 24px;
-  color: #222;
-  line-height: 1.4;
-}
+ #thumb-container{
+     display: flex;
+     justify-content: center;
+     height: 80px;
+ }
 
-.subtitle{
-  width: 680px;
-  margin: 0px 20px;;
-  font-family: Merriweather;
-  font-size: 20px;
-}
+ .thumb-image{
+     margin: 10px;
+     height: 50px;
+ }
 
-hr {
-  width: 680px;
-  border: 2px solid black;
-  margin: auto;
-}
+ .active-thumb-image{
+     border: 5px solid grey;
+     height: 50px;
+ }
+
+
+
+ .thumbnail {
+    position: relative;
+    height: 80px;
+  }
+  
+  .title {
+    display: none;
+    font-size: 12px;
+    position: relative;
+    background: grey;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    top: -110px;
+  }
+  
+  .thumbnail:hover .title {
+    display: block;
+  }
